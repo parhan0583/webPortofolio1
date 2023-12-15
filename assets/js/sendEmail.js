@@ -5,7 +5,8 @@ function sendEmail() {
     .then(
       function(response) {
         console.log("Email sent successfully:", response);
-        alert('berhasil')
+        alert('berhasil');
+        location.reload();
       },
       function(error) {
         console.log("Failed to send email:", error);
